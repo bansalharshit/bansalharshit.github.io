@@ -1,190 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio-Harshit Bansal</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="https://kit.fontawesome.com/83f65eabc3.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <!-- Header Section Start -->
-    <div id="header">
-        <div class="container">
-        
-            <nav>
-                <!-- <img src="images/hb logo 2.png" alt="harshit Bansal" class="logo"> -->
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-            
-            <div class="header-text">
-                
-                <h3 class="javabackend"><span>J</span>ava Ba<span>ck</span>end Develo<span>pe</span>r</h3>
-                <h1>Hi,I'm <span>Harshit</span>  <br>Bansal From India</h1>
-                <a href="images/updated first draft resume of Harshit Bansal.pdf " target="_blank" class="btn btn2">Resume</a>
-                
-            </div>
-            <a href="https://github.com/bansalharshit" target="_blank"><i class="fa-brands fab fa-github"></i></a>
-        </div>
-    </div>
-    <!-- Header Section Close -->
-    <!-- About Section Start -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/about pic .png" alt="">
-                </div>
- <div class="about-col-2">
-<h1 class="sub-title">About me</h1>
-    <p class="about-summary">Hi, I am harshit,an aspiring java developer,since my childhood I fond of learn computer and since then my curiosity towards technology went on and on.This is how I choosen the Tech field and I am sure my skills and knowledge will definately help the society to solve the day to day problems related to technology.I see myself as a successful Software Developer who has benefited the bussiness and achieved my Technical Goals. I enjoy new challenges and I am eager to move up in the company into a specialized role where i can focus on the more technical problems we faced and make a real difference.Software Development changes very rapidly and over the next five years i want to contribute in a meaningful way to the sector</p>
-     <div class="tab-titles">
-<!-- <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p> -->
-<!-- <p class="tab-links" onclick="opentab('Experience')">Experience</p> -->
-<p class="tab-links" onclick="opentab('Education')">Education</p>
-     </div>
-     
-<!-- <div class="tab-contents active-tab" id="Skills">
-    <ul>
-        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-        <li><span><i class="fa-brands fa-html5"></i></span><br><h1>HTML5</h1></li>
-        <li><span><i class="fa-brands fa-css3-alt"></i></span><br><h1>CSS3</h1></li>
-        <li><span><i class="fa-brands fa-js"></i></span><br><h1>JavaScript</h1></li>
-        <li><span><i class="fa-brands fa-java"></i></span><br><h1> Java</h1></li>
-        <li><span><i class="fa-solid fa-brands fa-fish"></i></span><br><h1>MySQL</h1></li>
-        <li><span><i class="fa-brands fa-js"></i></span><br><h1>Spring Boot</h1></li>
-        <li><span><i class="fa-brands fa-js"></i></span><br><h1>Hibernate</h1></li>
-        <li><span><i class="fa-brands fa-js"></i></span><br><h1>MySQL</h1></li>
-        <li><span><i class="fa-solid fa-brands fa-brain"></i></span><br><h1>Data Sturucture And Algorithm</h1></li>
-         <li><span>Web Development</span><br>Designing Web/App interfaces</li>
-         <li><span>UI/UX</span><br>Designing Web/App interfaces</li> 
-    </ul>
-</div> -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/v1.png" />
+    <link rel="stylesheet" href="./css/styles.css" />
 
-<!-- <div class="tab-contents" id="Experience">
-    <ul>
-        <li><span>02-2022 - Present</span><br>if any you have</li>
-        <li><span>Web Development</span><br>Designing Web/App interfaces</li>
-        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-    </ul>
-</div> -->
-<div class="tab-contents" id="Education">
-    <ul>
-        <li><span>Full Stack Web Developer</span><br><h2>Masai School,Banglore | 02/2022 - 10/2022</h2></li>
-        <li><span>Bachelor of Science(B.sc)</span><br><h2>Laxmi Chand Katori Devi,Hathras | 08/2016 - 10/2020</h2></li>
-        <li><span>Intermediate(Science)</span><br> <h2>RPM Sr. Sec. School,Hathras | 04/2015 - 06/2016</h2></li>
-    </ul>
-               </div>
-           </div>
-       </div>
-    </div>
- </div>
- <!-- Services -->
- <div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Skills</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Front End</h2>
-                <li><span><i class="fa-brands fa-html5"></i></span><br><h3>HTML5</h3></li>
-                <li><span><i class="fa-brands fa-css3-alt"></i></span><br><h3>CSS3</h3></li>
-                <li><span><i class="fa-brands fa-js"></i></span><br><h3>JavaScript</h3></li>
-                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur optio est porro nisi beatae cupiditate delectus voluptatum repudiandae molestiae! Dignissimos facere corporis, aut expedita tempore minus dolorum autem? Fuga, magnam?</p> -->
-                <!-- <a href="#">Learn More</a> -->
-            </div>
-            <div>
-                <!-- <i class="fas fa-crop-alt"></i> -->
-                <i class="fa-solid fa-code"></i>
-                <h2>Back End</h2>
-                <li><span><i class="fa-brands fa-java"></i></span><br><h3> Java</h3></li>
-                <li><span><i class="fa-solid fa-brands fa-fish"></i></span><br><h3>MySQL</h3></li>
-                <li><span><i class="fa-solid fa-leaf"></i></span><br><h3>Spring Boot</h3></li>
-                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur optio est porro nisi beatae cupiditate delectus voluptatum repudiandae molestiae! Dignissimos facere corporis, aut expedita tempore minus dolorum autem? Fuga, magnam?</p> -->
-                <!-- <a href="#">Learn More</a> -->
-            </div>
-            <div>
-                <!-- <i class="fa-brands fa-app-store"></i> -->
-                <i class="fa-solid fa-code"></i>
-                <h2> Logical</h2>
-                <li><span><i class="fa-solid fa-brands fa-brain"></i></span><br><h3>Data Sturucture And Algorithm</h3></li>
-                <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur optio est porro nisi beatae cupiditate delectus voluptatum repudiandae molestiae! Dignissimos facere corporis, aut expedita tempore minus dolorum autem? Fuga, magnam?</p> -->
-                <!-- <a href="#">Learn More</a> -->
-            </div>
+    <!-- =====BOX ICONS===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Harshit Bansal</title>
+  </head>
+  <body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <!-- &#60; viraj /&#62; -->
+          <a href="#home" class="nav-logo"
+            >
+            <img src="./img/h-letter-logo-design_579179-1043.jpg" alt="A"
+          />
+          
+        </a>
+        <!-- <div class="nav-list nav-item">
+
+          <a hre f="" class="nav-link home active">Resume</a>
+        </div> -->
+        <a
+            href="#home"
+            
+            
+            >Harshit Bansal</a
+          >
+
+          
         </div>
-    </div>
- </div>
- <!-- PortFolio -->
- <div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title"> My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/Travelocity.png" alt="Travelocity">
-                <div class="layer">
-                    <h1>Clone of Travelocity</h1>
-                    <p >Travelocity is one stop solution for all your travel needs.Travelocity.com is an online travel agency. It has 12.4 million monthly unique visitors, making it the third most popular website among others.</p>
-                    <a href="https://travelocityclone.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/Screenshot (75).png" alt="">
-                <div class="layer">
-                    <h3>Clone of MaxFashion</h3>
-                    <p>MaxFashion is an E-commerce website where you can buy premium attire for your whole family.</p>
-                    <a href="https://curious-brioche-eae154.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <!-- <div class="work">
-                <img src="images/harshit bansal image.jpg" alt="">
-                <div class="layer">
-                    <h3>Online Shoping App</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorum delectus tempora expedita beatae quod voluptatibus debitis in voluptate nisi.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div> -->
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#home" class="nav-link home active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link about">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link contact">Contact</a>
+            </li>
+          </ul>
         </div>
-        <!-- <a class="btn" href="#">SEE MORE</a> -->
-    </div>
- </div>
-</body>
-<!-- Contanct INFO -->
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i> <h2> harshitbansal394@gmail.com </h2></p>
-                <p><i class="fa-solid fa-phone"></i> <h2> 8279855302 , 9634479852 </h2></p>
-                <div class="social-icons">
-                    <!-- <a href=""><i class="fab fa-facebook"></i></a> -->
-                    <a href="https://twitter.com/harshitb101" target="_blank"><i class="fab fa-twitter-square"></i></a>
-                    <a href="https://github.com/bansalharshit" target="_blank"><i class="fa-brands fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/harshit-bansal-772765149/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </div>
-                <a href="images/updated first draft resume of Harshit Bansal.pdf" class="btn btn2">Resume</a>
-            </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your email" required>
-                    <textarea name="Message" rows="6"
-                    placeholder="Your Message"></textarea>
-                    <button class="btn btn2" type="submit" >Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
+
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
         </div>
-    </div>
-</div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid section" id="home">
+        <div class="home-data">
+          <h2 class="home-title">
+            Hi 👋,<br />I'am <span class="home-title-color">Harshit</span><br />
+            Java Backend Developer
+          </h2>
+
+          <a
+            href="https://drive.google.com/file/d/1mSjM5PQBfzmjT7vKe94XKZGrjfdajql3/view?usp=sharing"
+            target="_blank"
+            class="button"
+            >Resume</a
+          >
+        </div>
+
+        <div class="home-social">
+          <a
+            href="https://www.linkedin.com/in/harshit-bansal-772765149/"
+            target="_blank"
+            class="home-social-icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/bansalharshit"
+            target="_blank"
+            class="home-social-icon"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
+<!-- Harshit Bansal Image -->
+        <div class="home-img">
+          <img class="home-imgsrc" src="./img/h-letter-logo-design_579179-1043.jpg" alt="Harshit" />
+        </div>
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about-container bd-grid">
+           <div class="about-img">
+            <img src="./img/Harshit Bansal Image.png" alt="" />
+          </div> 
+
+          <div style="text-align: center">
+            <!-- <h2 class="about-subtitle">I'am Viraj Gupta</h2> -->
+            <p class="about-text">
+              Hi ! 👋, I am Harshit, an aspiring java developer since my childhood i fond of learn computers and since then my curiosity towards technology went on and on. This is how i have choosen the tech field and i am sure my skills and knowledge will definately help the society to solve the day to day problems related to technology.I see myself as a successful Software Developer who has benefited the bussiness and achieved my Technical Goals. I enjoy new challenges and I am eager to move up in the company into a specialized role where i can focus on the more technical problems we faced and make a real difference.Software Development changes very rapidly and over the next five years i want to contribute in a meaningful way to the sector.
+            </p>
+            <br />
+            <p>
+              Drop a mail @ harshitbansal394@gmail.com
+              <i
+                style="color: #4070f4; font-size: 1.2rem; cursor: pointer"
+                class="bx bx-copy"
+                id="copy"
+              ></i>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-container bd-grid">
+          <div>
+            <h2 class="skills-subtitle">Front-end Skills</h2>
+            <div class="skills-data">
+              <div class="skills-names">
+                <i class="bx bxl-html5 skills-icon"></i>
+                <span class="skills-name">HTML5</span>
+              </div>
+              <!-- <div class="skills-bar skills-html"></div> -->
+              <!-- <div>
+                <span class="skills-percentage">75%</span>
+              </div> -->
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <i class="bx bxl-css3 skills-icon"></i>
+                <span class="skills-name">CSS3</span>
+              </div>
+              <!-- <div class="skills-bar skills-css"></div> -->
+              <!-- <div>
+                <span class="skills-percentage">70%</span>
+              </div> -->
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <i class="bx bxl-javascript skills-icon"></i>
+                <span class="skills-name">JAVA SCRIPT</span>
+              </div>
+              <!-- <div class="skills-bar skills-js"></div> -->
+              <!-- <div>
+                <span class="skills-percentage">85%</span>
+              </div> -->
+            </div>
+            
+             
+          <div>
+            <h2 class="skills-subtitle">Back-end Skills</h2>
+            <div class="skills-data">
+              <div class="skills-names">
+                <img
+                  class="skills-icon"
+                  src="./img/java-logo.png"
+                  alt=""
+                />
+                <span class="skills-name">Core Java</span>
+              </div>
+              <!-- <div class="skills-bar skills-express"></div> -->
+              <!-- <div>
+                <span class="skills-percentage">85%</span>
+              </div> -->
+            </div>
+            
+            <div class="skills-data">
+              <div class="skills-names">
+                <img class="skills-icon" src="./img/mysql.png" alt="" />
+                <span class="skills-name">MySQL</span>
+              </div>
+
+              <!-- <div class="skills-bar skills-sql"></div> -->
+              <!-- <div>
+                <span class="skills-percentage">65%</span>
+              </div> -->
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <img class="skills-icon" src="https://www.vectorlogo.zone/logos/hibernate/hibernate-icon.svg" alt="" />
+                <span class="skills-name">Hibernate</span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <img
+                  class="skills-icon"
+                  src="./img/spring-framework.png"
+                  alt=""
+                />
+                <span class="skills-name">Spring Boot</span>
+              </div>
+              <!-- <div class="skills-bar skills-mongo"></div> -->
+              <!-- <div>
+                <span class="skills-percentage">80%</span>
+              </div> -->
+            </div>
+          </div>
+
+          
+        </div>
+      </section>
+
+      <!--===== Projects =====-->
+      <section class="projects section" id="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project-container">
+          <div class="project-img">
+           <div class="diver"> <img class="imageheight" src="./img/maxfashion image.png" alt="MaxFashion" /></div>
+            <p class="project-title">MaxFashion clone</p>
+            <p class="project-subtitle">
+              MaxFashion is an e-commerce website where you can buy a premium attire for your whole falimy.  <br />
+              <br />
+              A collaborative project, built in 6 days by a team of 5 Members.
+               <br />
+              <br /> Tech Stack-HTML | CSS  | Javascript
+            </p>
+            <div class="project-btns">
+              <a
+                href="https://github.com/bansalharshit/Unit-3-Project---Max-fashion-"
+                target="_blank"
+                class="small-btn button"
+              >
+                Code<i class="bx bxl-github"></i>
+              </a>
+              <a
+                href="https://curious-brioche-eae154.netlify.app/"
+                target="_blank"
+                class="small-btn button"
+              >
+                Live<i class="bx bx-link-external"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-img">
+           <div class="diver"> <img class="imageheight" src="./img/Travelocity image.png" alt="Travelocity" /></div>
+            <p class="project-title">Travelocity clone</p>
+            <p class="project-subtitle">
+             Travelocity is one stop solution for all your travel needs. Travelocity.com is an online travel agency. It has 12.4 million monthly unique visitors, making it the third most popular website among others.<br/>
+              <br />
+              A collaborative project built by a team of 5, executed in 6 days.
+              <br />
+              <br />Tech Stack- HTML | CSS  | Javascript 
+            </p>
+            <div class="project-btns">
+              <a
+                href="https://github.com/bansalharshit/unit2-project-1--travelocity"
+                hreflang="https://intense-shore-24711.herokuapp.com/"
+                target="_blank"
+                class="small-btn button"
+              >
+                Code<i class="bx bxl-github"></i>
+              </a>
+              <a
+                href="https://travelocityclone.netlify.app/"
+                target="_blank"
+                class="small-btn button"
+              >
+                Live<i class="bx bx-link-external"></i>
+              </a>
+            </div>
+          </div>
+
+          
+          </div>
+        </div>
+      </section>
+
+      <!--===== CONTACT =====-->
+      
+    </main>
+
+    <!--===== FOOTER + CONTACT=====-->
+    <footer class="footer section" id="contact">
+      <h2 class="section-title">Get in touch</h2>
+      <p class="footer-title">Harshit Bansal</p>
+      <div class="footer-social">
+        <a
+          href="https://www.linkedin.com/in/harshit-bansal-772765149/"
+          target="_blank"
+          class="footer-icon"
+          ><i class="bx bxl-linkedin">
+            <br />
+            <p class="fffff">LinkedIn</p></i
+          ></a
+        >
+        <a
+          href="https://github.com/bansalharshit"
+          target="_blank"
+          class="footer-icon"
+          ><i class="bx bxl-github">
+            <br />
+            <p class="fffff">Github</p>
+            </i
+          ></a
+        >
+        
+        <a
+          href="mailto:ayushraj315@gmail.com"
+          target="_blank"
+          class="footer-icon"
+          ><i class="bx bx-mail-send">
+            <br />
+            <p class="fffff">E-mail</p>
+            </i
+          ></a
+        >
+        <a href="tel:+917004740069" target="_blank" class="footer-icon"
+          ><i class="bx bx-phone">
+            <br />
+            <p class="fffff">Phone</p>
+            </i
+          ></a
+        >
+      </div>
+      <div id="last" class="footer-social">
+        <div class="footer-social" id="lastdiv"><i  class="bx bx-mail-send footer-icon" ></i><p class="fffff"> harshitbansal394@gmail.com </p></div>
+        <div class="footer-social" id="lastdiv"><i  class="bx bx-phone footer-icon"></i><p class="fffff">+918279855302</p></div>
+      </div>
+      <p>&#169; 2022 copyright all right reserved</p>
+    </footer>
+
+    <!--===== MAIN JS =====-->
+    <script src="./js/main.js"></script>
+  </body>
 </html>
-<script src="index.js"></script>
+<a
