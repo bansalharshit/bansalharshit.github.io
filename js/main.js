@@ -58,7 +58,7 @@ copy.addEventListener( "click", () => {
 const sr = ScrollReveal( {
   origin: "top",
   distance: "80px",
-  duration: 1350,
+  duration: 1100,
   reset: true,
 } );
 
