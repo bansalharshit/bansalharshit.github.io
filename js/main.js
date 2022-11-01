@@ -33,15 +33,15 @@ window.addEventListener( "scroll", () => {
   } )
 } )
 
-// function linkAction() {
-//   /*Active link*/
-//   navLinks.forEach((n) => n.classList.remove("active"));
-//   this.classList.add("active");
+function linkAction() {
+  /*Active link*/
+  navLinks.forEach((n) => n.classList.remove("active"));
+  this.classList.add("active");
 
 //   /*Remove menu mobile*/
 const navMenu = document.getElementById( "nav-menu" );
-//   navMenu.classList.remove("show");
-// }
+  navMenu.classList.remove("show");
+}
 navLinks.forEach( ( n ) => n.addEventListener( "click", () => { navMenu.classList.remove( "show" ) } ) );
 
 /*===== COPY Email =====*/
@@ -83,4 +83,4 @@ sr.reveal( ".skills-data", { interval: 100 } );
 sr.reveal( ".project-img", { interval: 200 } );
 
 /*SCROLL CONTACT*/
-// sr.reveal(".contact-input", { interval: 200 });
+sr.reveal(".contact-input", { interval: 200 });
