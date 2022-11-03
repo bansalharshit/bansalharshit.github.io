@@ -33,15 +33,15 @@ window.addEventListener( "scroll", () => {
   } )
 } )
 
-function linkAction() {
-  /*Active link*/
-  navLinks.forEach((n) => n.classList.remove("active"));
-  this.classList.add("active");
+// function linkAction() {
+//   /*Active link*/
+//   navLinks.forEach((n) => n.classList.remove("active"));
+//   this.classList.add("active");
 
 //   /*Remove menu mobile*/
 const navMenu = document.getElementById( "nav-menu" );
-  navMenu.classList.remove("show");
-}
+//   navMenu.classList.remove("show");
+// }
 navLinks.forEach( ( n ) => n.addEventListener( "click", () => { navMenu.classList.remove( "show" ) } ) );
 
 /*===== COPY Email =====*/
@@ -51,14 +51,14 @@ copy.addEventListener( "click", () => {
   copy.innerHTML = "copied";
   setTimeout( () => {
     copy.innerHTML = null;
-  }, 800 );
+  }, 1000 );
 } );
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal( {
   origin: "top",
   distance: "80px",
-  duration: 800,
+  duration: 2000,
   reset: true,
 } );
 
@@ -77,10 +77,10 @@ sr.reveal( ".about-text", { delay: 400 } );
 sr.reveal( ".skills-subtitle", {} );
 sr.reveal( ".skills-text", {} );
 sr.reveal( ".skills-data", { interval: 100 } );
-// sr.reveal(".skills-img", { delay: 600 });
+sr.reveal(".skills-img", { delay: 600 });
 
 /*SCROLL projects*/
 sr.reveal( ".project-img", { interval: 200 } );
 
 /*SCROLL CONTACT*/
-sr.reveal(".contact-input", { interval: 200 });
+// sr.reveal(".contact-input", { interval: 200 });
