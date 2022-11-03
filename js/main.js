@@ -51,14 +51,14 @@ copy.addEventListener( "click", () => {
   copy.innerHTML = "copied";
   setTimeout( () => {
     copy.innerHTML = null;
-  }, 1000 );
+  }, 800 );
 } );
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal( {
   origin: "top",
   distance: "80px",
-  duration: 1100,
+  duration: 800,
   reset: true,
 } );
 

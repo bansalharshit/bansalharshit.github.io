@@ -278,9 +278,11 @@ section.about {
 }
 .about-img {
   justify-self: center;
+  
 }
 .about-img img {
   width: 200px;
+  
   border-radius: 0.5rem;
 }
 
