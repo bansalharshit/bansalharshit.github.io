@@ -267,7 +267,7 @@ img {
 
 /* ===== ABOUT =====*/
 section.about {
-  padding: 20vh 15px;
+  padding: 0vh 2px;
 }
 .about-container {
   row-gap: 2rem;
@@ -535,6 +535,7 @@ img.man-icons {
   }
 
   .about-container {
+    
     align-items: center;
     margin: auto;
     width: 50%;
